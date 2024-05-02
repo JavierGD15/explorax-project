@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { View, Image, StyleSheet, Text } from 'react-native';
 import Constant from 'expo-constants';
 
 export default function Advance() {
@@ -16,11 +16,6 @@ export default function Advance() {
             <Text style={styles.scoreText}>000000</Text>
           </View>
         </View>
-
-        {/* <TouchableOpacity onPress={handlePressMenu} style={styles.menuButton}>
-          <Image source={require('../../assets/icon.png')} style={styles.menuImage} />
-        </TouchableOpacity> */}
-
       </View>
     </View>
   );
@@ -28,43 +23,43 @@ export default function Advance() {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row', 
-    flexWrap: 'wrap',     
-    alignItems: 'center', 
-    justifyContent: 'space-between', 
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   worldImage: {
-    
-    width: 100, 
-    height: 100, 
+
+    width: 100,
+    height: 100,
     marginTop: Constant.statusBarHeight,
   },
 
   scoreContainer: {
-    flexDirection: 'row', 
-    alignItems: 'center', 
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   coinImage: {
-    width: 40, 
-    height: 40, 
+    width: 40,
+    height: 40,
     resizeMode: 'contain',
-    zIndex: 1, 
+    zIndex: 1,
 
   },
   scoreBackground: {
-    backgroundColor: '#204D8D', 
-    borderRadius: 20, 
-    paddingHorizontal: 22, 
-    paddingVertical: 5, 
-    marginLeft: -20, 
-    flexDirection: 'row', 
-    alignItems: 'center', 
-    justifyContent: 'flex-end', 
+    backgroundColor: '#204D8D',
+    borderRadius: 20,
+    paddingHorizontal: 22,
+    paddingVertical: 5,
+    marginLeft: -20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
 
   },
   scoreText: {
-    color: '#FFFFFF', 
-    fontSize: 20, 
+    color: '#FFFFFF',
+    fontSize: 20,
     fontWeight: 'bold',
   },
 });
